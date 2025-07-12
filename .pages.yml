@@ -1,0 +1,41 @@
+media: public/assets/images
+
+content:
+  - name: posts
+    label: Posts
+    path: src/_posts
+    type: collection
+    view:
+      fields: [ title, published_at ]
+      primary: title
+      sort: [ title, created_at ]
+      default: 
+        search: ''
+        sort: title
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        options:
+          minLength: 20
+          maxLength: 255
+      - name: published_at
+        label: Published At
+        type: date
+        options:
+          format: dd-MM-yyyy
+          min: 2025-01-01
+      - name: created_at
+        label: Date
+        type: date
+        options:
+          format: dd-MM-yyyy
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          path: posts_images
+      
+      
+      
