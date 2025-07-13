@@ -23,4 +23,10 @@ so this is code
 > 
 > testing
 > 
-> its greatge
+> its **greatge**
+
+![]({{site.baseurl}})![small.jp2]({{site.baseurl}}/src/_posts/small.jp2)
+
+wow it sis greate 
+
+
